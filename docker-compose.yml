@@ -3,12 +3,12 @@ version: "3.7"
 services:
   app:
     image: docker-java/java
-    command: "java -jar /home/app/target/demo-2.7.5.jar"
     user: "${UID}:${GID}"
+    command: "java -jar /app/target/demo-2.7.5.jar"
     volumes:
-      - ./:/home/app
+      - .:/app
     ports:
-      - "8761:8761"
+      - "8585:8080"
     environment:
       UID: ${UID}
       GID: ${GID}

@@ -6,9 +6,9 @@ docker build -f maven.Dockerfile \
 docker run --rm \
            --name docker-java_maven \
            --user $(id -u ${USER}):$(id -g ${USER}) \
-           --volume /usr/src/app \
+           --volume $(pwd):/app \
            docker-java/maven \
-           clean install
+           mvn clean install
 
 docker rm docker-java_maven
 

@@ -1,7 +1,11 @@
+?/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+applicationMain.txt
+controllerHello.txt
 
 ### IntelliJ IDEA ###
 .idea

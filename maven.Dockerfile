@@ -11,6 +11,6 @@ RUN groupadd --gid $GID app \
 
 USER app
 
-WORKDIR /home/app
+WORKDIR /app
 
-ENTRYPOINT ["mvn"]
+CMD ["mvn"]
